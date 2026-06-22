@@ -7,19 +7,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
 <style>
 :root {
-  --bg:       #0f1117;
-  --surface:  #181b26;
-  --card:     #1e2133;
-  --border:   #2a2f4a;
-  --gold:     #c9a84c;
-  --teal:     #3ecfb2;
-  --coral:    #e8635a;
-  --pink:     #e86fa0;
-  --blue:     #5b8ef0;
-  --purple:   #a47cf0;
-  --green:    #52c97a;
-  --text:     #e8eaf0;
-  --muted:    #6b7290;
+  --bg:       #f0f4fa;
+  --surface:  #ffffff;
+  --card:     #ffffff;
+  --border:   #d8e0ee;
+  --gold:     #b07d20;
+  --teal:     #0e9e84;
+  --coral:    #d94f45;
+  --pink:     #d4507e;
+  --blue:     #2d6ef0;
+  --purple:   #7c4ff0;
+  --green:    #1a9e50;
+  --text:     #1a1e2e;
+  --muted:    #7a84a0;
   --mono:     'JetBrains Mono', monospace;
   --sans:     'Noto Sans TC', sans-serif;
   --r:        10px;
@@ -57,10 +57,10 @@ main{max-width:880px;margin:0 auto;padding:0 14px;}
   background:var(--card);border:1px solid var(--border);border-radius:var(--r);
   padding:13px 14px;
 }
-.tot-card.mine{border-color:#2a4060;background:linear-gradient(135deg,#1a2540,#1e2d4a);}
+.tot-card.mine{border-color:#a0c4e8;background:linear-gradient(135deg,#e8f2ff,#d4eaff);}
 .tot-card .lbl{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px;}
 .tot-card .val{font-family:var(--mono);font-size:1.25rem;font-weight:600;color:var(--text);}
-.tot-card.mine .val{color:var(--teal);}
+.tot-card.mine .val{color:#0e6e5c;}
 .tot-card .sub{font-size:.68rem;color:var(--muted);margin-top:3px;}
 
 /* Person summary pills */
@@ -71,13 +71,13 @@ main{max-width:880px;margin:0 auto;padding:0 14px;}
   padding:11px 16px;flex:1;min-width:150px;
 }
 .avatar{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;flex-shrink:0;}
-.avatar.a{background:#2e2050;color:#b48cf0;}
-.avatar.b{background:#1e3840;color:#4ecdc4;}
+.avatar.a{background:#ede0ff;color:#6a30d0;}
+.avatar.b{background:#d0f4ee;color:#0a8a72;}
 .pill-info .name{font-size:.82rem;font-weight:500;}
 .pill-info .sub{font-size:.68rem;color:var(--muted);}
 .pill-amt{font-family:var(--mono);font-size:1.1rem;font-weight:600;margin-left:auto;}
-.pill-amt.a{color:#b48cf0;}
-.pill-amt.b{color:#4ecdc4;}
+.pill-amt.a{color:#6a30d0;}
+.pill-amt.b{color:#0a8a72;}
 
 /* Section title */
 .sec{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin:20px 0 10px;display:flex;align-items:center;gap:8px;}
@@ -122,7 +122,7 @@ main{max-width:880px;margin:0 auto;padding:0 14px;}
   text-align:right;
 }
 .field-input:focus{border-color:var(--gold);}
-.field-input.paid{border-color:#2a5040;color:var(--green);}
+.field-input.paid{border-color:#a0d4c0;color:var(--green);}
 .field-input.readonly{opacity:.5;cursor:default;}
 
 /* Paid toggle */
@@ -132,7 +132,7 @@ main{max-width:880px;margin:0 auto;padding:0 14px;}
   background:none;color:var(--muted);font-size:.9rem;cursor:pointer;
   display:flex;align-items:center;justify-content:center;transition:.15s;
 }
-.paid-toggle.on{border-color:var(--green);background:#1e3a2e;color:var(--green);}
+.paid-toggle.on{border-color:var(--green);background:#d4f4e4;color:var(--green);}
 .paid-toggle:hover{border-color:var(--green);}
 .paid-label{font-size:.62rem;color:var(--muted);}
 
@@ -145,10 +145,10 @@ main{max-width:880px;margin:0 auto;padding:0 14px;}
 .owe-val.pos{color:var(--coral);}
 
 /* Installment rows */
-.install-row{background:#1a1e30;border-radius:var(--r);margin-top:4px;}
+.install-row{background:#f4f6ff;border-radius:var(--r);margin-top:4px;}
 .install-row td{padding:8px 10px;font-size:.78rem;}
 .install-tag{
-  display:inline-block;background:#1e2e50;color:var(--blue);
+  display:inline-block;background:#dce8ff;color:var(--blue);
   border-radius:20px;padding:2px 8px;font-size:.68rem;font-family:var(--mono);
 }
 
@@ -167,7 +167,7 @@ main{max-width:880px;margin:0 auto;padding:0 14px;}
 .add-bank-bar input[type=text]{flex:1;min-width:120px;}
 .add-bank-bar select{min-width:80px;}
 .btn-gold{
-  background:var(--gold);color:#1a1200;font-weight:700;font-size:.82rem;
+  background:var(--gold);color:#ffffff;font-weight:700;font-size:.82rem;
   border:none;border-radius:7px;padding:8px 16px;cursor:pointer;white-space:nowrap;
   transition:opacity .15s;
 }
@@ -180,8 +180,8 @@ main{max-width:880px;margin:0 auto;padding:0 14px;}
 }
 .loan-grid{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;align-items:end;}
 .loan-grid .field-wrap{margin-bottom:0;}
-.btn-del-loan{background:none;border:1px solid var(--border);color:var(--coral);border-radius:7px;padding:6px 12px;cursor:pointer;font-size:.8rem;transition:.15s;white-space:nowrap;}
-.btn-del-loan:hover{background:#2a1a1a;}
+.btn-del-loan{background:none;border:1px solid #f0c0bc;color:var(--coral);border-radius:7px;padding:6px 12px;cursor:pointer;font-size:.8rem;transition:.15s;white-space:nowrap;}
+.btn-del-loan:hover{background:#fde8e6;}
 
 /* Grand total table */
 .grand-section{
@@ -555,7 +555,7 @@ function bankHTML(bank,bi,c){
         <div class="field-label">${paid?'已繳':'應繳'}</div>
       </div>
     </div>
-    ${instRows?`<div style="border-top:1px solid var(--border);background:#181b26;padding:0 10px 10px;">${instRows}</div>`:''}
+    ${instRows?`<div style="border-top:1px solid var(--border);background:#f4f6fb;padding:0 10px 10px;">${instRows}</div>`:''}
   </div>`;
 }
 
@@ -675,8 +675,8 @@ function renderTotals(){
     <div class="grand-row"><span class="glabel" style="color:var(--coral);">應繳信用卡</span><span class="gval" style="color:var(--coral);">${fmt(unpaidCC)}</span></div>
     <div class="grand-row"><span class="glabel">貸款合計</span><span class="gval">${fmt(loanTotal)}</span></div>
     <div class="grand-row"><span class="glabel" style="color:var(--green);">已繳貸款</span><span class="gval" style="color:var(--green);">${fmt(paidLoan)}</span></div>
-    <div class="grand-row"><span class="glabel">${G.names.a} 應付</span><span class="gval" style="color:#b48cf0;">${fmt(ccOweA)}</span></div>
-    <div class="grand-row"><span class="glabel">${G.names.b} 應付</span><span class="gval" style="color:#4ecdc4;">${fmt(ccOweB)}</span></div>
+    <div class="grand-row"><span class="glabel">${G.names.a} 應付</span><span class="gval" style="color:#6a30d0;">${fmt(ccOweA)}</span></div>
+    <div class="grand-row"><span class="glabel">${G.names.b} 應付</span><span class="gval" style="color:#0a8a72;">${fmt(ccOweB)}</span></div>
     <div class="grand-row total"><span class="glabel">本月總計</span><span class="gval">${fmt(allTotal)}</span></div>
     <div class="grand-row mine-row"><span class="glabel">我需支付（扣除A、B）</span><span class="gval">${fmt(Math.max(mine,0))}</span></div>
   `;
